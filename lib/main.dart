@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
-
 void main() async {
   Stripe.publishableKey = 'key';
   await Stripe.instance.applySettings();
@@ -139,7 +138,7 @@ class DelayedSlideInState extends State<DelayedSlideIn>
               child: child!,
             ),
           ]
-        );      
+        );
       },
       child: widget.child,
     );
